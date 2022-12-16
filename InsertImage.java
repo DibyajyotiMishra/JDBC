@@ -15,7 +15,7 @@ public class InsertImage {
 
             PreparedStatement pstmt = conn.prepareStatement(query);
 
-            FileInputStream fis = new FileInputStream("image.jpg");
+            FileInputStream fis = new FileInputStream("./assets/image.jpg");
 
             pstmt.setBinaryStream(1, fis, fis.available());
             pstmt.executeUpdate();
@@ -28,11 +28,3 @@ public class InsertImage {
 
     }
 }
-
-/**
- * TINYBLOB ≈ 255 bytes,
- * BLOB ≈ 64KB,
- * MEDIUMBLOB ≈ 16MB
- * and
- * LONGBLOB ≈ 4GB Run
- */
