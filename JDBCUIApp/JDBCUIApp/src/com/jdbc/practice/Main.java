@@ -28,6 +28,7 @@ public class Main {
             System.out.println("Image inserted successfully");
 
             JOptionPane.showMessageDialog(null, "Image inserted successfully");
+            connection.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
