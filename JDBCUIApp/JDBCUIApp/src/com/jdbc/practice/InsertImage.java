@@ -7,7 +7,7 @@ import java.sql.PreparedStatement;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
-public class Main {
+public class InsertImage {
     public static void main(String[] args) {
         try {
             Connection connection = ConnectionProvider.getConnection();
